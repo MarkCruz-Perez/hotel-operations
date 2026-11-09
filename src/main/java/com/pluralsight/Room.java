@@ -15,7 +15,13 @@ public class Room {
         }
         return false;
     }
-
+    public Room(int numberOfBeds, double price, boolean occupied,
+    boolean dirty) {
+        this.numberOfBeds = Integer.toString(numberOfBeds);
+        this.price = price;
+        this.occupied = occupied;
+        this.dirty = dirty;
+    }
     public double getPrice() {
         return price;
     }
@@ -25,4 +31,10 @@ public class Room {
     public int getNumberOfBeds() {
         return numberOfBeds.length();
     }
+    public boolean isDirty() {
+        return this.dirty;
+    }
+
+
+
 }
